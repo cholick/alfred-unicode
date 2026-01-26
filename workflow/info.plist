@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.cholick.unicode</string>
+	<key>connections</key>
+	<dict>
+		<key>934D7475-AFB1-49BD-A3E5-4D40733D6246</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>73C8D274-6CFE-4DDB-A473-BB9935DE241A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Matt Cholick</string>
+	<key>description</key>
+	<string>Search through unicode and emoji</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Unicode and Emoji search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>unicode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cat cldr.json</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search unicode and emoji</string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>934D7475-AFB1-49BD-A3E5-4D40733D6246</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>73C8D274-6CFE-4DDB-A473-BB9935DE241A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow searches through the unicode character set (including emoji) using the Unicode Common Locale Data Repository. This repository has a set of tags and for the characters to ease finding them.
+
+For example, the 🎉 has the text-to-speech name of "party popper" and the tags "ball", "celebrate", "celebration", "confetti", "party" and "woohoo". Any of these things will trigger a match.
+
+Selecting an item copies it to the clipboard.</string>
+	<key>uidata</key>
+	<dict>
+		<key>73C8D274-6CFE-4DDB-A473-BB9935DE241A</key>
+		<dict>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+		<key>934D7475-AFB1-49BD-A3E5-4D40733D6246</key>
+		<dict>
+			<key>xpos</key>
+			<real>125</real>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>VERSION_PLACEHOLDER</string>
+	<key>webaddress</key>
+	<string>https://www.cholick.dev</string>
+</dict>
+</plist>
