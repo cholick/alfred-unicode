@@ -6,7 +6,7 @@ For example, the 🎉 has the text-to-speech name of "party popper" and the tags
 
 In a different plugin I used Levenshtein distance, but the annotations from CLDR a decent enough that just feeding that full set into Alfred's results filter keeps things simple (and really fast since I can rely on Alfred's caching rather than re-running the script every keystroke). It does mean that you have to spell something like `ellipsis` correct, though, and won't get proper results if you type `eli`.
 
-![screenshot](/docs/screenshot.png)
+<img src="/docs/screenshot.png" width="600">
 
 ### Installation
 Download the newest version via [the latest release](https://github.com/cholick/alfred-unicode/releases/latest)
