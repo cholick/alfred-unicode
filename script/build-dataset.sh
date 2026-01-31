@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -e
-cd "$(dirname "$0")/.."
+
+script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd "${script_dir}/.."
 
 mkdir -p tmp
 mkdir -p tmp/icons

@@ -2,8 +2,7 @@
 set -e
 
 script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
-cd "${script_dir}"/..
+cd "${script_dir}/.."
 
 python3 cldr-xml-to-json.py
 
