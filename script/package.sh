@@ -4,6 +4,8 @@ set -e
 script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd "${script_dir}/.."
 
+plutil -lint workflow/info.plist
+
 python3 cldr-xml-to-json.py
 
 mkdir -p /tmp/alfred-unicode
